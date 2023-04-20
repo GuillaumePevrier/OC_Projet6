@@ -6,10 +6,13 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import GlobalStyle from './util/styles/globalStyles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
 	<BrowserRouter>
 		<Header />
+		<GlobalStyle />
 		<Routes>
 			<Route exact path="/" element={<Home />} />
 			<Route path="/about" element={<About />} />

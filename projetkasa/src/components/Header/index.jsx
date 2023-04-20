@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import styled from 'styled-components';
+import GlobalStyle from '../../util/styles/globalStyles';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -23,13 +24,20 @@ const Navigation = styled.nav`
 
 const NavLink = styled(Link)`
   margin-left: 20px;
-  font-size: 16px;
-  color: #555555;
+  font-size: 24px;
+  color: #FF6060;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  text-align: right;
+  vertical-align: bottom;
 
   &:hover {
-	color: #000000;
+    color: #FF6060;
+    text-decoration: underline;
+  }
+  
+  &:focus {
+    text-decoration: underline;
   }
 `;
 
@@ -40,6 +48,7 @@ const Header = () => {
 				<Logo src={logo} alt="Logo" />
 			</Link>
 			<Navigation>
+				<GlobalStyle />
 				<NavLink to="/">Accueil</NavLink>
 				<NavLink to="/about">A propos</NavLink>
 			</Navigation>
