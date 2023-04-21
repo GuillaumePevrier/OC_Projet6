@@ -11,6 +11,10 @@ const StyledFooter = styled.footer`
   justify-content: center;
   height: 200px;
   font-size: 1.2rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 46px;
 `;
 
 const Logo = styled.img`

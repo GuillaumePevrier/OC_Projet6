@@ -6,6 +6,7 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Fiche from './components/Fiche';
 import GlobalStyle from './util/styles/globalStyles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
 			<Route exact path="/" element={<Home />} />
 			<Route path="/about" element={<About />} />
 			<Route path="*" element={<Error />} />
+			<Route path="/logements/:id" element={<Fiche />} />
 		</Routes>
 		<Footer />
 	</BrowserRouter>,

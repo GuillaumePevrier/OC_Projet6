@@ -5,12 +5,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: auto;
   }
 
   /* Styles for desktop */
   @media (min-width: 768px) {
     body {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 1.5;
       margin-left: 100px;
       margin-top: 40px;
@@ -22,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   /* Styles for mobile */
   @media (max-width: 767px) {
     body {
-      font-size: 16px;
+      font-size: 13px;
       line-height: 1.2;
       margin-left: 20px;
       margin-top: 20px;
