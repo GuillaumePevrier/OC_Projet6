@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logements from '../../data/logements.json';
+import { useParams } from 'react-router-dom';
 
 const FicheContainer = styled.div`
   margin-top: 43px;
@@ -12,9 +13,9 @@ const FicheContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const Fiche = ({ match }) => {
-	const logement = match && match.params ? logements.find(logement => logement.id === match.params.id) : null;
-
+const Fiche = () => {
+	const { id } = useParams();
+	const logement = logements.find(logement => logement.id === id);
 	if (!logement) {
 		return <div>Logement non trouvé</div>;
 	}
