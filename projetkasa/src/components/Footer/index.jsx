@@ -10,11 +10,14 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: center;
   height: 200px;
-  font-size: 1.2rem;
-  bottom: 0;
-  left: 0;
+  font-size: 24px;
   width: 100%;
+  position: relative;
   margin-top: 46px;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
 `;
 
 const Logo = styled.img`
@@ -25,7 +28,7 @@ const Logo = styled.img`
 const Footer = () => {
 	return (
 		<StyledFooter>
-			<Logo src={logo} alt="Logo" />© 2023 ProjectKasa - Tous droits réservés
+			<Logo src={logo} alt="Logo" />© 2020 Kasa. All rights reserved
 		</StyledFooter>
 	);
 };

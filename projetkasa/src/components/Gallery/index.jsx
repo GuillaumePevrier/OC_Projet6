@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 const GalleryContainer = styled.div`
   margin-top: 43px;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 829;
   border-radius: 25px;
   background-color: #F6F6F6;
   display: grid;
@@ -15,6 +15,13 @@ const GalleryContainer = styled.div`
   grid-gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  @media (max-width: 767px) {
+   margin-left: 20px;
+   margin-right: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -24,7 +31,7 @@ const GalleryContainer = styled.div`
 
 const Card = styled(Link)`
   width: auto;
-  height: 255px;
+  height: 340px;
   border-radius: 10px;
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, #000000 100%), url(${props => props.backgroundImage});
   background-size: cover;
@@ -37,7 +44,7 @@ const Card = styled(Link)`
   color: #fff;
   
   @media screen and (min-width: 768px) {
-    height: 340px;
+    height: 255px;
     width: auto;
   }
 `;

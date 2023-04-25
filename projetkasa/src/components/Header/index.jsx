@@ -11,7 +11,15 @@ const HeaderContainer = styled.header`
   height: 80px;
   padding: 0 20px;
   background-color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  @media (max-width: 767px) {
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+  }
 `;
 
 const Logo = styled.img`
@@ -39,6 +47,11 @@ const NavLink = styled(Link)`
   &:focus {
     text-decoration: underline;
   }
+  
+  @media (max-width: 767px) {
+   font-size: 12px;
+  }
+  
 `;
 
 const Header = () => {

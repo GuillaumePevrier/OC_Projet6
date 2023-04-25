@@ -1,11 +1,11 @@
 import React from 'react';
-import Banner from '../../components/Banner';
+import BannerAbout from '../../components/BannerAbout';
 import Accordion from '../../components/Accordion';
 
 function About() {
 	return (
 		<div>
-			<Banner backgroundImage={require('../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png')} />
+			<BannerAbout backgroundImage={require('../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png')} />
 			<div>
 				<Accordion />
 			</div>

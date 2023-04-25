@@ -19,8 +19,8 @@ const BannerContainer = styled.div`
   
   @media (max-width: 767px) {
    align-items: start;
-   height: 111px;
    width: auto;
+   border-radius: 10px;
    margin-left: 20px;
    margin-right: 20px;
   }
@@ -47,7 +47,7 @@ const BannerText = styled.h2`
   }
 `;
 
-const Banner = ({ backgroundImage, text }) => {
+const BannerAbout = ({ backgroundImage, text }) => {
 	return (
 		<BannerContainer backgroundImage={backgroundImage}>
 			<GlobalStyle />
@@ -56,4 +56,4 @@ const Banner = ({ backgroundImage, text }) => {
 	);
 };
 
-export default Banner;
+export default BannerAbout;

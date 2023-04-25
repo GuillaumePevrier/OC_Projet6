@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
   position: relative;
-  width: 100%;
+  width: auto;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;
   margin-bottom: 30px;
+ 
 `;
 
 const CarouselSlide = styled.div`

@@ -7,6 +7,14 @@ import accordionData from '../../data/accordionData.json';
 const AccordionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+   
+   
+  @media (max-width: 767px) {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
 `;
 
 const AccordionHeader = styled.div`
@@ -19,23 +27,22 @@ const AccordionHeader = styled.div`
   background-color: #FF6060;
   cursor: pointer;
   color: #FFFFFF;
+  font-size: 24px;
+  width: auto;
+  margin-left: 108px;
+  margin-right: 108px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 24px;
   
-  /* Styles for desktop */
-  @media (min-width: 768px) {
-	width: auto;
-	margin-left: 108px;
-	margin-right: 108px;
-	margin-top: 30px;
-	margin-bottom: 0px;
-  }
   
-  /* Styles for mobile */
   @media (max-width: 767px) {
 	width: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 20px;
 	margin-bottom: 0px;
+  font-size: 13px;
   }
 `;
 
@@ -46,52 +53,42 @@ const AccordionContent = styled.div`
   border-radius: 5px;
   background-color: #F6F6F6;
   color: #FF6060;
+  font-size: 24px;
+  width: auto;
+  margin-left: 108px;
+  margin-right: 108px;
+  padding: 20px;
+  max-height: unset;
+  font-size: 24px;
   
-  /* Styles for desktop */
-  @media (min-width: 768px) {
-	width: auto;
-	margin-left: 108px;
-	margin-right: 108px;
-	padding: 20px;
-	max-height: unset;
-  }
   
-  /* Styles for mobile */
   @media (max-width: 767px) {
 	width: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	padding: 10px;
+  font-size: 12px;
   }
 `;
 
 const AccordionTitle = styled.div`
   font-size: 24px;
-  color= #FFFFFF;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-weight: medium;
   margin-left: 20px;
+  font-size: 24px;
   
-  /* Styles for desktop */
-  @media (min-width: 768px) {
-	font-size: 32px;
-  }
-  
-  /* Styles for mobile */
   @media (max-width: 767px) {
-	font-size: 24px;
+	font-size: 13px;
   }
 `;
 
 const AccordionIcon = styled(FontAwesomeIcon)`
   font-size: 24px;
   margin-right: 20px;
+  font-size: 32px;
+
   
-  /* Styles for desktop */
-  @media (min-width: 768px) {
-	font-size: 32px;
-  }
-  
-  /* Styles for mobile */
   @media (max-width: 767px) {
 	font-size: 24px;
   }

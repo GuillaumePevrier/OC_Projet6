@@ -8,8 +8,9 @@ import { useParams } from 'react-router-dom';
 
 const AccordionContainer = styled.div`
   display: flex;
-  justify-content: space-between; /* aligns the accordions side by side */
+  justify-content: space-between; 
   width: 100%;
+  
   
   @media (max-width: 767px) {
     flex-direction: column;
@@ -19,9 +20,10 @@ const AccordionContainer = styled.div`
 `;
 
 const Accordion = styled.div`
-  flex-basis: calc(50% - 10px); /* sets the width of each accordion to half the available space, with a margin of 20px between them */
+  flex-basis: calc(50% - 10px);
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
   
   
   @media (max-width: 767px) {
@@ -39,23 +41,48 @@ const AccordionHeader = styled.div`
   background-color: #FF6060;
   cursor: pointer;
   color: #FFFFFF;
+  font-size: 18px;
+  width: 100%;
+  height: 52px;
+  
+  @media (max-width: 767px) {
+  font-size: 13px;
+  width: 100%;
+  height: 29px;
+  }
   
   
 `;
 
 const AccordionContent = styled.div`
-  max-height: 146px;
+  max-height: none;
   overflow: hidden;
   border-radius: 5px;
   background-color: #F6F6F6;
   color: #FF6060;
+  padding-left: 20px;
+  padding-right: 12px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  
+  @media (max-width: 767px) {
+    font-size: 12px;
+    padding-left: 11px;
+    padding-right: 6px;
+    padding-top: 17px;
+  }
 `;
 
 const AccordionTitle = styled.div`
-  font-size: 24px;
+  font-size: 18px;
   color= #FFFFFF;
   font-weight: bold;
   margin-left: 20px;
+  
+  @media (max-width: 767px) {
+  font-size: 13px;
+  }
 `;
 
 const AccordionIcon = styled(FontAwesomeIcon)`
