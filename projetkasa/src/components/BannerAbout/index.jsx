@@ -57,3 +57,8 @@ const BannerAbout = ({ backgroundImage, text }) => {
 };
 
 export default BannerAbout;
+
+// La fonction définit BannerAbout prend deux propriétés (props) en entrée : "backgroundImage" et "text".
+// BannerAbout utilise la bibliothèque "styled-components" pour styliser ("BannerContainer") avec un arrière-plan d'image et du texte centré à l'intérieur ("BannerText"). 
+// La propriété "backgroundImage" est utilisée pour définir l'image d'arrière-plan de la bannière en utilisant l${props => props.backgroundImage}.
+// Le composant retourne le conteneur de bannière avec la propriété d'arrière-plan et le texte passé en tant que prop dans le composant "BannerText".

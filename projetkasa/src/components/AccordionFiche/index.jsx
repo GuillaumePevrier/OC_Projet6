@@ -91,7 +91,7 @@ const AccordionIcon = styled(FontAwesomeIcon)`
 `;
 
 const AccordionFiche = () => {
-	const [activeIndexes, setActiveIndexes] = useState(new Array(accordionData.length).fill(false));
+	const [activeIndexes, setActiveIndexes] = useState(new Array(accordionData.length).fill(true));
 	const { id } = useParams();
 	const logement = logements.find(logement => logement.id === id);
 
@@ -115,3 +115,18 @@ const AccordionFiche = () => {
 };
 
 export default AccordionFiche;
+
+// Le code crée un composant AccordionFiche qui affiche une liste déroulante de contenus. 
+// Le contenu est stocké dans le fichier accordionData.json et est chargé depuis le dossier Data. 
+// Le composant utilise la bibliothèque styled-components pour le style des éléments. 
+// Le conteneur de l'accordéon est un élément de style flex qui contient une en-tête et un contenu. 
+// L'en-tête est stylisé pour afficher le titre de l'élément avec un icône de chevron qui pointe vers le haut ou vers le bas, en fonction de l'état de AccordionFiche. 
+// Lorsque l'utilisateur clique sur l'en-tête, l'état de l'élément est modifié pour afficher ou masquer le contenu.
+// Lorsque l'élément est ouvert, le contenu est affiché dans un élément de style div. 
+// AccordionFiche est exporté pour pouvoir être utilisé dans l'application. 
+
+// La fonction AccordionFiche utilise useState() pour créer une variable d'état "activeIndexes" 
+// qui est un tableau rempli de "true" (AccordionFiche ouvert) avec une longueur égale à la longueur de "accordionData" importé à partir d'un fichier JSON.
+
+// AccordionFiche utilise également la méthode "handleClick" pour inverser les valeurs booléennes (true ou false) du tableau "activeIndexes". 
+// La fonction retourne ensuite un élément JSX qui crée un conteneur d'accordéon avec un en-tête et un contenu pour chaque élément dans le tableau "accordionData".

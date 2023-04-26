@@ -81,3 +81,16 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+// Gallery affiche une galerie d'images de logements. 
+// Il utilise le module "styled-components" pour styliser les éléments. Le contenu de la galerie est chargé à partir du fichier "logements.json".
+// La galerie est affichée sous forme de cartes (éléments "Card") qui contiennent le titre de chaque logement et leur image de couverture. 
+// Chaque carte est cliquable et redirige vers la page du logement correspondant . Si une carte est cliquée, 
+// un composant "Fiche" s'affiche avec plus d'informations sur le logement sélectionné.
+
+// Le composant "Gallery" utilise le hook d'état "useState" pour stocker le logement sélectionné (ou null s'il n'y a pas de logement sélectionné).
+// La fonction "handleLogementClick" est appelée lorsqu'une carte est cliquée et met à jour l'état "selectedLogement" avec le logement correspondant.
+// Si un logement est sélectionné, le composant "Fiche" est affiché avec les détails du logement sélectionné. Sinon, la galerie de cartes est affichée.
+
+// La galerie est stylisée avec une mise en page de grille flexible qui utilise les propriétés CSS "display: grid" et "grid-template-columns".
+// La taille des colonnes est ajustée en fonction de la taille de l'écran. Le fond des cartes utilise un dégradé linéaire et l'image de couverture du logement.

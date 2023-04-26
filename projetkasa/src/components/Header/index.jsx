@@ -70,3 +70,18 @@ const Header = () => {
 };
 
 export default Header;
+
+// Le composant Header affiche la barre de navigation en haut de la page.
+
+// Le code commence par importer les modules React, Link, logo, et styled-components.
+// Le style de Header utilise le module styled-components. 
+// Header est composé de deux éléments : le logo, la barre de navigation 
+
+// Le logo est défini en tant que <img> , et l'image provient du fichier logo.png situé dans le dossier assets.
+
+// La barre de navigation est définie en tant que <nav>, et contient deux éléments <Link> : "Accueil" et "A propos".
+// Les éléments <Link> sont stylisés en utilisant styled-components.
+
+// Enfin, le style global est importé depuis le module globalStyles et appliqué à la barre de navigation.
+
+// Header est exporté par défaut et utilisé dans l'application pour afficher la barre de navigation en haut de la page.

@@ -34,3 +34,12 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// Le code définit un composant Footer pour le site. 
+
+// Footer contient deux éléments : un logo et un texte indiquant le copyrights,
+
+// Le composant StyledFooter définit les styles CSS pour le pied de page.Il utilise un fond sombre et du texte blanc. Il est centré à l'aide de flexbox.
+// Les styles sont également modifiés pour les écrans mobiles à l'aide des médias queries.
+
+// Le composant Footer est exporté pour être utilisé dans l'application.

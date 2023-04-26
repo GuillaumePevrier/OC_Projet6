@@ -84,14 +84,6 @@ const TitleLocationContainer = styled.div`
   color: #FF6060;
 `;
 
-const RatingContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-`;
-
 const Title = styled.h1`
   font-family: Montserrat;
   font-style: medium;
@@ -158,3 +150,22 @@ const Fiche = () => {
 };
 
 export default Fiche;
+
+// Le code définit une page de présentation du logement sélectionné avec plusieurs composants.
+
+// Il commence par l'importation de différents composants nécessaires pour la page, Carousel, Rating et l'AccordionFiche. 
+// Il importe également les données de logements à partir du fichier logements.json stocké dans le dossier data.
+
+// La fonction Fiche commence par extraire l'identifiant du logement à partir de l'URL à l'aide de useParams() du package "react-router-dom".
+// Ensuite, la fonction Fiche recherche le logement correspondant à l'identifiant et le stocke dans la variable logement.
+
+// Si le logement n'est pas trouvé, la fonction affiche un message d'erreur.
+
+// Enfin, la fonction affiche la page de présentation en utilisant les données du logement trouvé.
+
+// La page de présentation contient les informations suivantes :
+// Un composant Carousel affichant les images du logement.
+// Un en-tête de la fiche contenant le titre du logement, sa localisation et le nom et l'image.
+// Une liste de tags qui décrivent le logement.
+// Le composant Rating est également affiché dans cette liste, affichant le score de notation du logement.
+// Un composant AccordionFiche qui affiche des informations supplémentaires sur le logement, telles que sa description et les équipements.

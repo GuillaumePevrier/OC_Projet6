@@ -1,4 +1,3 @@
-import React from 'react';
 import GlobalStyle from '../../util/styles/globalStyles';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -81,3 +80,6 @@ function Error() {
 }
 
 export default Error;
+
+// Le code définit un composant "Error" qui affiche une page d'erreur 404 avec un message d'erreur et un lien pour retourner à la page d'accueil.
+// Il utilise la bibliothèque styled-components pour styliser les éléments.
