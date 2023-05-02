@@ -8,7 +8,7 @@ const Rating = ({ score }) => {
 
 	const stars = [];
 	for (let i = 0; i < fullStars; i++) {
-		stars.push(<FontAwesomeIcon icon={solidStar} key={i} color="#FF6060" />);
+		stars.push(<FontAwesomeIcon style={{ marginRight: '3px' }} icon={solidStar} key={i} color="#FF6060" />);
 	}
 	for (let i = 0; i < emptyStars; i++) {
 		stars.push(<FontAwesomeIcon icon={regularStar} key={fullStars + i} color="#FF6060" />);
@@ -23,9 +23,9 @@ export default Rating;
 // et un certain nombre d'étoiles vides (représentées par l'icône regularStar) pour un total de 5 étoiles.
 
 // Le composant commence par calculer le nombre d'étoiles pleines en arrondissant le score inférieur au nombre entier le plus proche,
-// puis en calculant le nombre d'étoiles vides en soustrayant le nombre d'étoiles pleines de 5. 
+// puis en calculant le nombre d'étoiles vides en soustrayant le nombre d'étoiles pleines de 5.
 
-// Ensuite, il ajoute les étoiles pleines et vides dans un tableau stars, qui est affiché en tant que JSX. 
+// Ensuite, il ajoute les étoiles pleines et vides dans un tableau stars, qui est affiché en tant que JSX.
 
-// Chaque icône est un composant FontAwesomeIcon de la bibliothèque @fortawesome/react-fontawesome 
+// Chaque icône est un composant FontAwesomeIcon de la bibliothèque @fortawesome/react-fontawesome
 // qui prend deux props : icon, qui spécifie l'icône à utiliser, et color, qui spécifie la couleur de l'icône.

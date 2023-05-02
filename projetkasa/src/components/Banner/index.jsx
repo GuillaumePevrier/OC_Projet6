@@ -18,32 +18,32 @@ const BannerContainer = styled.div`
   margin-right: 100px;
   
   @media (max-width: 767px) {
-   align-items: start;
-   height: 111px;
-   width: auto;
-   margin-left: 20px;
-   margin-right: 20px;
+    align-items: start;
+    height: 111px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 `;
 
 const BannerText = styled.h2`
   font-weight: 500;
   font-size: 48px;
-  line-height: 68px;
   color: #FFFFFF;
   text-align: center;
-  margin-top: 50px;
   height: 68px;
   width: auto;
   
   @media (max-width: 767px) {
-   font-size: 24px;
-   text-align: left;
-   height: 48px;
-   width: auto;
-   margin-bottom: 31px;
-   margin-top: 30px;
-   margin-rigth: 102px;
+    width: 217px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 24px;
   }
 `;
 
@@ -59,6 +59,6 @@ const Banner = ({ backgroundImage, text }) => {
 export default Banner;
 
 // La fonction définit Banner prend deux propriétés (props) en entrée : "backgroundImage" et "text".
-// Banner utilise la bibliothèque "styled-components" pour styliser ("BannerContainer") avec un arrière-plan d'image et du texte centré à l'intérieur ("BannerText"). 
+// Banner utilise la bibliothèque "styled-components" pour styliser ("BannerContainer") avec un arrière-plan d'image et du texte centré à l'intérieur ("BannerText").
 // La propriété "backgroundImage" est utilisée pour définir l'image d'arrière-plan de la bannière en utilisant l${props => props.backgroundImage}.
 // Le composant retourne le conteneur de bannière avec la propriété d'arrière-plan et le texte passé en tant que prop dans le composant "BannerText".

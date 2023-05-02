@@ -21,6 +21,7 @@ const GalleryContainer = styled.div`
   @media (max-width: 767px) {
    margin-left: 20px;
    margin-right: 20px;
+   
   }
 
   @media screen and (min-width: 768px) {
@@ -43,7 +44,8 @@ const Card = styled(Link)`
   text-decoration: none;
   color: #fff;
   
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 375px) {
     height: 255px;
     width: auto;
   }
@@ -69,7 +71,7 @@ const Gallery = () => {
 				<Fiche logement={selectedLogement} onClose={() => setSelectedLogement(null)} />
 			) : (
 				<GalleryContainer>
-					{logements.slice(0, 6).map(logement => (
+					{logements.map(logement => (
 						<Card key={logement.id} backgroundImage={logement.cover} to={`/logements/${logement.id}`} onClick={() => handleLogementClick(logement)}>
 							<Title>{logement.title}</Title>
 						</Card>
@@ -82,10 +84,10 @@ const Gallery = () => {
 
 export default Gallery;
 
-// Gallery affiche une galerie d'images de logements. 
+// Gallery affiche une galerie d'images de logements.
 // Il utilise le module "styled-components" pour styliser les éléments. Le contenu de la galerie est chargé à partir du fichier "logements.json".
-// La galerie est affichée sous forme de cartes (éléments "Card") qui contiennent le titre de chaque logement et leur image de couverture. 
-// Chaque carte est cliquable et redirige vers la page du logement correspondant . Si une carte est cliquée, 
+// La galerie est affichée sous forme de cartes (éléments "Card") qui contiennent le titre de chaque logement et leur image de couverture.
+// Chaque carte est cliquable et redirige vers la page du logement correspondant . Si une carte est cliquée,
 // un composant "Fiche" s'affiche avec plus d'informations sur le logement sélectionné.
 
 // Le composant "Gallery" utilise le hook d'état "useState" pour stocker le logement sélectionné (ou null s'il n'y a pas de logement sélectionné).

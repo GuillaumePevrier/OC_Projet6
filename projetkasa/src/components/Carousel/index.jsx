@@ -8,6 +8,11 @@ const CarouselContainer = styled.div`
   border-radius: 25px;
   overflow: hidden;
   margin-bottom: 30px;
+  
+  @media (max-width: 767px) {
+    height: 255px;
+    border-radius: 10px;
+  }
  
 `;
 
@@ -43,7 +48,7 @@ const PrevButton = styled.button`
   }
   
   @media (max-width: 767px) {
-    font-size: 80px;
+    font-size: 30px;
   }
   
 `;
@@ -64,7 +69,7 @@ const NextButton = styled.button`
   }
   
   @media (max-width: 767px) {
-    font-size: 80px;
+    font-size: 30px;
   }
 `;
 
@@ -79,6 +84,16 @@ const ImageCount = styled.div`
 
 const Carousel = ({ images }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
+
+	if (images.length === 1) {
+		return (
+			<CarouselContainer>
+				<CarouselSlide key={0} active={true}>
+					<CarouselImage src={images[0]} alt={`Image ${0}`} />
+				</CarouselSlide>
+			</CarouselContainer>
+		);
+	}
 
 	const handlePrevClick = () => {
 		if (activeIndex === 0) {
@@ -113,6 +128,6 @@ const Carousel = ({ images }) => {
 export default Carousel;
 
 // Le composant React appelé Carousel est une interface qui permet d'afficher un carrousel d'images avec des boutons précédent et suivant ainsi que le nombre total d'images.
-// Il est composé de plusieurs sous-composants stylisés, tels que CarouselContainer, CarouselSlide, CarouselImage, PrevButton, NextButton et ImageCount. 
+// Il est composé de plusieurs sous-composants stylisés, tels que CarouselContainer, CarouselSlide, CarouselImage, PrevButton, NextButton et ImageCount.
 // Le composant utilise le hook useState pour suivre l'index de l'image active actuelle et définit deux gestionnaires d'événements de clic, handlePrevClick et handleNextClick,
 // pour permettre à l'utilisateur de naviguer à travers les images du carrousel.

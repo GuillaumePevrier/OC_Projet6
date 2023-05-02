@@ -11,9 +11,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     margin-top: 40px;
     margin-bottom: 0px;
+    max-width: 1240px;
+    margin: 0 auto;
   }
-
-
+  
   @media (max-width: 767px) {
     body {
       font-size: 13px;
